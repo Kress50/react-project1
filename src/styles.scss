@@ -1,0 +1,187 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+body {
+	background-color: #23252c;
+	color: #dcdcdc;
+	font-family: Inter, sans-serif;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #1a1b21;
+	width: 317px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+.card-image {
+	width: 317px;
+	height: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.header {
+	padding-top: 24px;
+	text-align: center;
+	line-height: 24px;
+	h1 {
+		font-size: 1.7rem;
+	}
+
+	h3 {
+		font-weight: 400;
+		color: #f3bf99;
+		font-size: 0.95rem;
+	}
+
+	h4 {
+		font-size: 0.75rem;
+		padding-bottom: 16px;
+		font-weight: 400;
+	}
+}
+
+.header-soc {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		text-decoration: none;
+	}
+
+	.header-email {
+		background-color: #dcdcdc;
+		color: #374151;
+	}
+
+	.header-linkedin {
+		background-color: #5093e2;
+		color: white;
+	}
+
+	.button {
+		padding: 6px 0px;
+		border-radius: 6px;
+		width: 115px;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	padding: 32px;
+	gap: 16px;
+
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 700;
+		padding-bottom: 4px;
+	}
+
+	p {
+		font-size: 0.66rem;
+	}
+}
+
+.footer {
+	background-color: #161619;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	padding: 16px;
+
+	img {
+		width: 25px;
+		height: 25px;
+	}
+}

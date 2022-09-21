@@ -1,0 +1,23 @@
+{
+	"name": "react-project1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel ./src/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.23.1",
+		"eslint-plugin-react": "^7.31.8",
+		"parcel-bundler": "^1.12.5",
+		"sass": "^1.54.9"
+	},
+	"component*": "./src/components/"
+}
